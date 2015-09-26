@@ -3,6 +3,7 @@ import akka.actor.Actor
 import akka.actor.ActorRef
 import akka.actor.Props
 import com.sun.org.apache.xpath.internal.operations.Bool
+import scala.collection.immutable.HashMap
 
 class Workers(arrActors: Array[ActorRef], numNodes: Int) extends Actor {
 
@@ -30,11 +31,16 @@ class Workers(arrActors: Array[ActorRef], numNodes: Int) extends Actor {
       println("Worker" + actorNumber.toString + "is stopping");
       context.stop(self);
     }
-    var i = index.toInt;
+    
+    //var i = index.toInt;
     val r = scala.util.Random;
-    val actNum = r.nextInt(numNodes);
+    //var nextActorNumber = r.nextInt(numNodes);
+    var actNum = r.nextInt(numNodes);
+    while(actNum == actorNumber)
+    {
+      actNum = r.nextInt(numNodes);
+    }
     arrActors(actNum) ! "Full_Mesh_Rumour";
-
   }
 
   //message dissemination in line topology
@@ -66,6 +72,97 @@ class Workers(arrActors: Array[ActorRef], numNodes: Int) extends Actor {
 
 }
 
+class Workers3D(arrActors: Array[Array[Array[ActorRef]]], numNodes: Int) extends Actor{
+  
+  var counter  = Array.ofDim[Int](numNodes, numNodes, numNodes);
+        for(i <- 1 to numNodes)
+        {
+          for(j<- 1 to numNodes)
+          {
+            for(k <- 1 to numNodes)
+            {
+             counter(i-1)(j-1)(k-1) = 0;
+            }
+          }
+        }
+
+def receive = {
+    case "3D rumour" =>
+      println(self.path.name + " recieved a message");
+      transmit3DGossip; 
+    
+  }
+
+def transmit3DGossip = {
+  
+  var index = self.path.name.split(",");
+  counter(index(0).toInt)(index(1).toInt)(index(2).toInt)+=1;
+  if(counter(index(0).toInt)(index(1).toInt)(index(2).toInt) == 10)
+  {
+    println("Worker" + index.toString + "is stopping");
+    context.stop(self);
+  }
+  val r = scala.util.Random;
+  var randomGen = r.nextInt(6);
+  val rangeStart = 0; val rangeEnd = numNodes -1;
+ var isSent:Boolean = false;
+  while(!isSent){
+    
+  randomGen = r.nextInt(6);
+    
+  if(randomGen == 0)
+ {     
+        if(index(0).toInt -1 >=0 ){
+         arrActors(index(0).toInt-1)(index(1).toInt)(index(2).toInt)  ! "3D rumour";
+         isSent = true;
+        }
+         
+ }else if( randomGen == 1){
+   if(index(1).toInt -1 >=0 ){
+     arrActors(index(0).toInt)(index(1).toInt-1)(index(2).toInt)  ! "3D rumour";
+      isSent = true;
+      
+        }
+   
+ }else if( randomGen ==2){
+   if(index(2).toInt -1 >=0 ){
+   arrActors(index(0).toInt)(index(1).toInt)(index(2).toInt-1)  ! "3D rumour";
+   isSent = true;
+        }
+     
+ }else if ( randomGen == 3){
+   if(index(0).toInt +1 < numNodes ){
+    arrActors(index(0).toInt+1)(index(1).toInt)(index(2).toInt)  ! "3D rumour";
+    isSent = true;
+        }
+   
+ }else if (randomGen == 4){
+   
+ if(index(1).toInt +1 < numNodes ){
+       arrActors(index(0).toInt)(index(1).toInt+1)(index(2).toInt)  ! "3D rumour";
+       isSent = true;
+        }
+
+   
+ }else if(randomGen == 5){
+   if(index(2).toInt +1 < numNodes ){
+    arrActors(index(0).toInt)(index(1).toInt)(index(2).toInt+1)  ! "3D rumour";
+    isSent = true;
+        }
+   
+ }
+  }
+ 
+  
+  
+  
+}
+
+
+}
+
+
+
 //entry point of the code.
 object Master {
 
@@ -89,7 +186,37 @@ object Master {
     topology match {
       case "line" => createLineTopology(numNodes, system);
       case "Full" => createFullMeshTopology(numNodes, system);
+      case "3D"  =>  create3DgridTopology(numNodes, system);
     }
+
+  }
+  
+  /*
+
+   * create a 3D grid and start sending a rumour for created topology
+
+   */
+
+  def create3DgridTopology(numNodes: Int, system : ActorSystem){
+
+        //a 3D grid of size numNodes X numNodes X numNodes 
+
+        //neighbour of a particular node is   [i-][j][k] [i][j-1][k] [i][j][k-1] and the + counterparts of these. 
+
+        var arrActors  = Array.ofDim[ActorRef](numNodes, numNodes, numNodes);
+        for(i <- 1 to numNodes)
+        {
+          for(j<- 1 to numNodes)
+          {
+            for(k <- 1 to numNodes)
+            {
+              arrActors(i-1)(j-1)(k-1) = system.actorOf(Props(new Workers3D(arrActors , numNodes)) , name = (i-1).toString +","+ (j-1).toString + "," + (k-1).toString);
+            }
+          }
+        }
+        
+    arrActors(0)(0)(0) ! "3D rumour";
+        
 
   }
 
