@@ -4,6 +4,7 @@ import akka.actor.ActorRef
 import akka.actor.Props
 import com.sun.org.apache.xpath.internal.operations.Bool
 import scala.collection.immutable.HashMap
+import java.lang.Long
 
 object Constants{
           val ConvergenceError = 0.000000001;  //stopping condition for pushSum operation
@@ -44,8 +45,15 @@ class Workers(arrActors: Array[ActorRef], numNodes: Int) extends Actor {
     case "Full_Mesh_Rumour_gossip" =>
       println("received message from" + sender.path.name);
       transmitGossipInMesh;
+    case b : Long => println(b);
+          setTime(b);
   }
-
+  
+  //variable to calculate converge time.
+  var B = System.currentTimeMillis();
+   def setTime(b:Long) = {
+      B = b;
+   } 
   //message dissemination in full mesh topology
   def transmitGossipInMesh = {
     var index = self.path.name;
@@ -53,6 +61,7 @@ class Workers(arrActors: Array[ActorRef], numNodes: Int) extends Actor {
     counter(actorNumber) = counter(actorNumber) + 1;
     if (counter(actorNumber) == Constants.CounterLimit ) {
       println("Worker" + actorNumber.toString + "is stopping");
+      println(System.currentTimeMillis()-B);
       context.stop(self);
     }
 
@@ -74,6 +83,7 @@ class Workers(arrActors: Array[ActorRef], numNodes: Int) extends Actor {
     counter(actorNumber) = counter(actorNumber) + 1;
     if (counter(actorNumber) == Constants.CounterLimit) {
       println("Worker" + actorNumber.toString + "is stopping");
+      println(System.currentTimeMillis()-B);
       context.stop(self);
     }
 
@@ -138,7 +148,10 @@ class Workers(arrActors: Array[ActorRef], numNodes: Int) extends Actor {
             }
             ratio = new_ratio;
             println("convergenceCounter for  : " + self.path.name + " " + convergenceCounter.toString());
-           if(convergenceCounter == 3 ) context.stop(self);       
+           if(convergenceCounter == 3 ) {
+               println(System.currentTimeMillis()-B);
+               context.stop(self);  
+           }     
   }
 
 }
@@ -176,7 +189,12 @@ class Workers3D(arrActors: Array[Array[Array[ActorRef]]], numNodes: Int, actorNu
     case (s_m : BigDecimal , w_m : BigDecimal ) => println("recieved a tuple (s,w) :" + s_m.toString + "  " + w_m.toString);
     updateCounters(s_m, w_m)
     transmit3DpushSumMessage;
-
+    case b :Long =>
+      setTime(b);
+  }
+  var B : Long = System.currentTimeMillis();
+  def setTime(b : Long){
+      B =b;
   }
 
   def transmit3DGossip = {
@@ -185,6 +203,7 @@ class Workers3D(arrActors: Array[Array[Array[ActorRef]]], numNodes: Int, actorNu
     counter(index(0).toInt)(index(1).toInt)(index(2).toInt) += 1;
     if (counter(index(0).toInt)(index(1).toInt)(index(2).toInt) == Constants.CounterLimit) {
       println("Worker" + index.toString + "is stopping");
+      println(System.currentTimeMillis()-B);
       context.stop(self);
     }
     val r = scala.util.Random;
@@ -244,7 +263,7 @@ class Workers3D(arrActors: Array[Array[Array[ActorRef]]], numNodes: Int, actorNu
     var isSent: Boolean = false;
     s = s/2;
     w = w/2;
-    var message = (s/2,w/2);
+    var message = (s,w);
     while (!isSent) {
 
       randomGen = r.nextInt(6);
@@ -364,6 +383,7 @@ class Workers3D(arrActors: Array[Array[Array[ActorRef]]], numNodes: Int, actorNu
     counter(index(0).toInt)(index(1).toInt)(index(2).toInt) += 1;
     if (counter(index(0).toInt)(index(1).toInt)(index(2).toInt) == Constants.CounterLimit) {
       println("Worker" + index.toString + "is stopping");
+      println(System.currentTimeMillis()-B);
       context.stop(self);
     }
     val r = scala.util.Random;
@@ -455,7 +475,10 @@ class Workers3D(arrActors: Array[Array[Array[ActorRef]]], numNodes: Int, actorNu
             }
             ratio = new_ratio;
             println("convergenceCounter for  : " + self.path.name + " " + convergenceCounter.toString());
-           if(convergenceCounter == 3 ) context.stop(self);       
+           if(convergenceCounter == 3 ) {
+             println(System.currentTimeMillis()-B);
+             context.stop(self);  
+           }     
   }
 }
 
@@ -504,6 +527,8 @@ object Master {
       }
     }
     println("sending first message in 3D topology");
+    val b = System.currentTimeMillis();
+    arrActors(0)(0)(0) ! b;
     arrActors(0)(0)(0) ! "3D_rumour_" + algorithm; //top left corner of the cuboid
 
   }
@@ -524,6 +549,8 @@ object Master {
             }
           }
         println("sending first message in Imperfect  3D topology");
+         val b = System.currentTimeMillis();
+        arrActors(0)(0)(0) ! b;
         arrActors(0)(0)(0) ! "Imp3D_rumour_" + algorithm; 
   }
   
@@ -537,6 +564,8 @@ object Master {
       arrActors(i - 1) = system.actorOf(Props(new Workers(arrActors, numNodes)), name = (i - 1).toString);
     }
     println("Sending first message in line topology");
+    val b = System.currentTimeMillis();
+    arrActors(0) ! b;
     arrActors(0) ! "Rumour_" + algorithm;
 
   }
@@ -551,6 +580,8 @@ object Master {
       arrActors(i - 1) = system.actorOf(Props(new Workers(arrActors, numNodes)), name = (i - 1).toString);
     }
     println("Sending first message in Full mesh topology");
+    val b = System.currentTimeMillis();
+    arrActors(0) ! b;
     arrActors(0) ! "Full_Mesh_Rumour_" + algorithm;
 
   }
