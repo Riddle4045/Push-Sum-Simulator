@@ -1,10 +1,10 @@
-[0m[[0minfo[0m] [0mIncluding from cache: config-1.2.1.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: protobuf-java-2.5.0.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: akka-testkit_2.11-2.3.13.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: netty-3.8.0.Final.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: akka-cluster_2.11-2.3.13.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: akka-remote_2.11-2.3.13.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: config-1.2.1.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: uncommons-maths-1.2.2a.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: protobuf-java-2.5.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: akka-cluster_2.11-2.3.13.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: netty-3.8.0.Final.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: akka-remote_2.11-2.3.13.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: akka-actor_2.11-2.3.13.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: scala-library-2.11.6.jar[0m
 [0m[[0mdebug[0m] [0mCalculate mappings...[0m
@@ -18,6 +18,7 @@
 [0m[[33mwarn[0m] [0mMerging 'reference.conf' with strategy 'concat'[0m
 [0m[[33mwarn[0m] [0mStrategy 'concat' was applied to a file[0m
 [0m[[33mwarn[0m] [0mStrategy 'discard' was applied to 5 files[0m
+[0m[[0minfo[0m] [0mSHA-1: b65d04a0bc4e48c93411873131696e5dde735189[0m
 [0m[[0minfo[0m] [0mPackaging /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/scala-2.11/Push-Sum_Gossip_Emulator-assembly-1.0.jar ...[0m
 [0m[[0mdebug[0m] [0mInput file mappings:[0m
 [0m[[0mdebug[0m] [0m	Constants$.class[0m
