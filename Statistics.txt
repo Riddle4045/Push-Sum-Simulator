@@ -1,0 +1,47 @@
+Algorithm : Push-Sum Toplogy : Line
+Size Convergence Time(ms)
+
+2500 			325
+5000 			406
+10,000 			882
+20,000 			2695
+30,000 			7039
+
+
+
+Algorithm : Gossip Toplogy : Line
+Size  Convergence Time(ms)
+
+2500			221
+5000 			429
+10,000			928
+20,000			2021
+30,000			5523
+40,000 			13698
+
+
+Algorithm : Push-Sum Topology : Full
+Size Convergence Time(ms)
+
+2500 			291
+5000			440
+10,000			1267
+20,000			3465
+30,000			4413
+40,000          15742
+
+
+Algorithm : Gossip topology : Full
+Size Convergence Time(ms)
+
+2500			259
+5000			418
+10,000			835
+20,000			2229
+30,000			6257
+40,000			6136
+
+Algrithm : Gossip Topology : 3D
+Size  Convergence Time (ms)
+
+2500 	

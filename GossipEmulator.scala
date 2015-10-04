@@ -505,13 +505,20 @@ object Master {
     topology match {
       case "line" => createLineTopology(numNodes, system,algorithm);
       case "Full" => createFullMeshTopology(numNodes, system,algorithm);
-      case "3D" => create3DgridTopology(numNodes, system,algorithm);
-      case "imp3D" => createImperfect3DgridTopology(numNodes,system,algorithm);
+      case "3D" => 
+          var cube = Math.cbrt(numNodes.toDouble).toInt;
+          numNodes = cube*cube*cube;
+        create3DgridTopology(numNodes, system,algorithm);
+      case "imp3D" => 
+          var cube = Math.cbrt(numNodes.toDouble).toInt;
+          numNodes = cube*cube*cube;
+        create3DgridTopology(numNodes, system,algorithm);
+        createImperfect3DgridTopology(numNodes,system,algorithm);
     }
 
   }
 
-  
+
   /*
    * create a 3D grid and start sending a rumour for created topology
    */
