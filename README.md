@@ -5,7 +5,6 @@ Push-Sum and Gossip protocol simulation with Actor model on different topologies
 **Statistics**
 
 Algorithm : Push-Sum
-
 Toplogy : Line
 
 Size                  Convergence Time(ms)
