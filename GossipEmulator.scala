@@ -512,7 +512,6 @@ object Master {
       case "imp3D" => 
           var cube = Math.cbrt(numNodes.toDouble).toInt;
           numNodes = cube;
-        create3DgridTopology(numNodes, system,algorithm);
         createImperfect3DgridTopology(numNodes,system,algorithm);
     }
 

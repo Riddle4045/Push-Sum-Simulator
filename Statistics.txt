@@ -23,7 +23,7 @@ Size  Convergence Time(ms)
 Algorithm : Push-Sum Topology : Full
 Size Convergence Time(ms)
 
-2500 			291
+2500 			29
 5000			440
 10,000			1267
 20,000			3465
@@ -44,4 +44,27 @@ Size Convergence Time(ms)
 Algrithm : Gossip Topology : 3D
 Size  Convergence Time (ms)
 
-2500 	
+1000		90
+2500 		100
+5000        434
+10,000		1101
+20,000		3589
+30,000      3741
+35,000		13272
+
+Algorithm : Push-Sum Tpology : 3D
+Size Convergence Time(ms)
+
+1000		281
+2500        283
+5000		722
+10,000		807
+20,000		1863
+30,000		9623
+35,000		13762
+
+ALgorithm : Gossip Topology : imp3D
+size Convergence Time(ms)
+
+1000
+
