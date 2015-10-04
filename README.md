@@ -2,10 +2,20 @@
 Push-Sum and Gossip protocol simulation with Actor model on different topologies.
 
 
-**Things to do**
+**Statistics**
 
-Update the Work messages recieved by workers to include different topologies and algorithms.
+Algorithm : Push-Sum
 
-Based on the work message call the transmit functions accordingly.
+Toplogy : Line
 
-Implememt the imperfect 3D strucutre.
+Size                  Convergence Time(ms)
+
+2500                         325
+
+5000                          406
+
+10,000                        882
+
+20,000                        2695
+
+30,000                        7039
