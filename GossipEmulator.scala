@@ -507,11 +507,11 @@ object Master {
       case "Full" => createFullMeshTopology(numNodes, system,algorithm);
       case "3D" => 
           var cube = Math.cbrt(numNodes.toDouble).toInt;
-          numNodes = cube*cube*cube;
+          numNodes = cube;
         create3DgridTopology(numNodes, system,algorithm);
       case "imp3D" => 
           var cube = Math.cbrt(numNodes.toDouble).toInt;
-          numNodes = cube*cube*cube;
+          numNodes = cube;
         create3DgridTopology(numNodes, system,algorithm);
         createImperfect3DgridTopology(numNodes,system,algorithm);
     }
@@ -523,6 +523,7 @@ object Master {
    * create a 3D grid and start sending a rumour for created topology
    */
   def create3DgridTopology(numNodes: Int, system: ActorSystem, algorithm : String) {
+    println("Building a 3D grid of " + numNodes*numNodes*numNodes + " nodes");
     var arrActors = Array.ofDim[ActorRef](numNodes, numNodes, numNodes);
     var counter = 0;
     for (i <- 1 to numNodes) {
@@ -545,6 +546,7 @@ object Master {
     * create a imperfect 3D grid topology and start a rumour
     */
   def createImperfect3DgridTopology(numNodes :Int , system : ActorSystem,algorithm : String){
+          println("Building a 3D grid of " + numNodes*numNodes*numNodes + " nodes");
           var arrActors = Array.ofDim[ActorRef](numNodes, numNodes, numNodes);
           var counter = 0;
           for (i <- 1 to numNodes) {
