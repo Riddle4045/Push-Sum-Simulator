@@ -33,13 +33,12 @@ Algorithms Implemented are:
 ###Performance:
 Here are some Graphs describing the performance achieved with our code.
 
-![3D-Gossip](resources/3D-Gossip.png)
-![Full-Mesh-Gossip](resources/Full-Mesh-Gossip.png)
-![Imperfect3D-pushSum](resources/Imperfect3D-pushSum.png)
-![Line-Push-Sum](resources/Line-Push-Sum.png)
-![3D-push-Sum](resources/3D-push-Sum.png)
-![Imperfect3D-Gossip](resources/Imperfect3D-Gossip.png)
-![Line-Gossip](resources/Line-Gossip.png)
+<img src="resources/3D-Gossip.png" width="425" height="300"> <img src="resources/3D-Gossip.png" width="425" height="300">
 
+<img src="resources/Full-Mesh-Gossip.png" width="425" height="300"> <img src="resources/Imperfect3D-pushSum.png" width="425" height="300">
+
+<img src="resources/Line-Push-Sum.png" width="425" height="300"> <img src="resources/3D-push-Sum.png" width="425" height="300">
+
+<img src="resources/Imperfect3D-Gossip.png" width="425" height="300"> <img src="resources/Line-Gossip.png" width="425" height="300">
 
 
