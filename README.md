@@ -11,15 +11,15 @@ Example: java –jar Project2.jar 1000 Full push-sum
 ```
 Various topologies implemented are:
 
-• Line Topology
-• Full topology
-• 3D Topology
-• Imperfect 3D Topology
+- Line Topology
+- Full topology
+- 3D Topology
+- Imperfect 3D Topology
 
 
 Algorithms Implemented are:
 
-• Push-Sum Algorithm.
-• Gossip Simulator.
+- Push-Sum Algorithm.
+- Gossip Simulator.
 
 
