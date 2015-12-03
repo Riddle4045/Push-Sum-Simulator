@@ -33,7 +33,7 @@ Algorithms Implemented are:
 ###Performance:
 Here are some Graphs describing the performance achieved with our code.
 
-![3D-Gossip](resources/3D-Gossip.png =100x100)
+![3D-Gossip](resources/3D-Gossip.png)
 ![Full-Mesh-Gossip](resources/Full-Mesh-Gossip.png)
 ![Imperfect3D-pushSum](resources/Imperfect3D-pushSum.png)
 ![Line-Push-Sum](resources/Line-Push-Sum.png)
