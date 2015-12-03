@@ -27,8 +27,8 @@ Size Convergence Time(ms)
 5000			440
 10,000			1267
 20,000			3465
-30,000			4413
-40,000          15742
+30,000		  	4413
+40,000                 15742
 
 
 Algorithm : Gossip topology : Full
@@ -66,5 +66,26 @@ Size Convergence Time(ms)
 ALgorithm : Gossip Topology : imp3D
 size Convergence Time(ms)
 
-1000
+1000  		106
+2500		233
+5000		567
+10,000		867
+20,000		2121
+30,000		7465
+35,000		13391
+40,000	    ??? OutofMemory exception (Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded)
+
+Algorithm : Push-Sum topology : imp3D
+size Convergence Time(ms)
+
+1000		284
+2500		350
+5000		660
+10,000		712
+20,000		1921
+30,000		6685
+35,000		7853
+
+For 45,000 Nodes the exception was :
+Exception: java.lang.NoClassDefFoundError thrown from the UncaughtExceptionHandler in thread "Master-scheduler-1
 

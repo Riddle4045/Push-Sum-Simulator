@@ -1,7 +1,7 @@
-[0m[[0minfo[0m] [0mIncluding from cache: uncommons-maths-1.2.2a.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: config-1.2.1.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: akka-testkit_2.11-2.3.13.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: protobuf-java-2.5.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: akka-testkit_2.11-2.3.13.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: uncommons-maths-1.2.2a.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: akka-cluster_2.11-2.3.13.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: netty-3.8.0.Final.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: akka-remote_2.11-2.3.13.jar[0m
@@ -18,13 +18,13 @@
 [0m[[33mwarn[0m] [0mMerging 'reference.conf' with strategy 'concat'[0m
 [0m[[33mwarn[0m] [0mStrategy 'concat' was applied to a file[0m
 [0m[[33mwarn[0m] [0mStrategy 'discard' was applied to 5 files[0m
-[0m[[0minfo[0m] [0mSHA-1: 5a2bd446d675f370577763f3a4af23a53a5dba4d[0m
+[0m[[0minfo[0m] [0mSHA-1: 28d99b8503f58354ebda4df0b918d57f2f48db64[0m
 [0m[[0minfo[0m] [0mPackaging /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/scala-2.11/Push-Sum_Gossip_Emulator-assembly-1.0.jar ...[0m
 [0m[[0mdebug[0m] [0mInput file mappings:[0m
-[0m[[0mdebug[0m] [0m	Constants$.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Constants$.class[0m
-[0m[[0mdebug[0m] [0m	Constants.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Constants.class[0m
+[0m[[0mdebug[0m] [0m	Constants_bonus$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Constants_bonus$.class[0m
+[0m[[0mdebug[0m] [0m	Constants_bonus.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Constants_bonus.class[0m
 [0m[[0mdebug[0m] [0m	META-INF/LICENSE_netty-3.8.0.Final.txt[0m
 [0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/048116ee03ea8bfb8ac0702f91483d74dd8cb71f_65e00948a33493081e4f6a8619d82ab3d4024af1_da39a3ee5e6b4b0d3255bfef95601890afd80709/META-INF/LICENSE_netty-3.8.0.Final.txt[0m
 [0m[[0mdebug[0m] [0m	META-INF/NOTICE_netty-3.8.0.Final.txt[0m
@@ -51,50 +51,52 @@
 [0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/048116ee03ea8bfb8ac0702f91483d74dd8cb71f_65e00948a33493081e4f6a8619d82ab3d4024af1_da39a3ee5e6b4b0d3255bfef95601890afd80709/META-INF/license_netty-3.8.0.Final/LICENSE.slf4j.txt[0m
 [0m[[0mdebug[0m] [0m	META-INF/license_netty-3.8.0.Final/LICENSE.webbit.txt[0m
 [0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/048116ee03ea8bfb8ac0702f91483d74dd8cb71f_65e00948a33493081e4f6a8619d82ab3d4024af1_da39a3ee5e6b4b0d3255bfef95601890afd80709/META-INF/license_netty-3.8.0.Final/LICENSE.webbit.txt[0m
-[0m[[0mdebug[0m] [0m	Master$$anonfun$create3DgridTopology$1$$anonfun$apply$mcVI$sp$3$$anonfun$apply$mcVI$sp$4$$anonfun$apply$mcVI$sp$7.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master$$anonfun$create3DgridTopology$1$$anonfun$apply$mcVI$sp$3$$anonfun$apply$mcVI$sp$4$$anonfun$apply$mcVI$sp$7.class[0m
-[0m[[0mdebug[0m] [0m	Master$$anonfun$create3DgridTopology$1$$anonfun$apply$mcVI$sp$3$$anonfun$apply$mcVI$sp$4.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master$$anonfun$create3DgridTopology$1$$anonfun$apply$mcVI$sp$3$$anonfun$apply$mcVI$sp$4.class[0m
-[0m[[0mdebug[0m] [0m	Master$$anonfun$create3DgridTopology$1$$anonfun$apply$mcVI$sp$3.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master$$anonfun$create3DgridTopology$1$$anonfun$apply$mcVI$sp$3.class[0m
-[0m[[0mdebug[0m] [0m	Master$$anonfun$create3DgridTopology$1.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master$$anonfun$create3DgridTopology$1.class[0m
-[0m[[0mdebug[0m] [0m	Master$$anonfun$createFullMeshTopology$1$$anonfun$apply$mcVI$sp$10.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master$$anonfun$createFullMeshTopology$1$$anonfun$apply$mcVI$sp$10.class[0m
-[0m[[0mdebug[0m] [0m	Master$$anonfun$createFullMeshTopology$1.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master$$anonfun$createFullMeshTopology$1.class[0m
-[0m[[0mdebug[0m] [0m	Master$$anonfun$createImperfect3DgridTopology$1$$anonfun$apply$mcVI$sp$5$$anonfun$apply$mcVI$sp$6$$anonfun$apply$mcVI$sp$8.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master$$anonfun$createImperfect3DgridTopology$1$$anonfun$apply$mcVI$sp$5$$anonfun$apply$mcVI$sp$6$$anonfun$apply$mcVI$sp$8.class[0m
-[0m[[0mdebug[0m] [0m	Master$$anonfun$createImperfect3DgridTopology$1$$anonfun$apply$mcVI$sp$5$$anonfun$apply$mcVI$sp$6.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master$$anonfun$createImperfect3DgridTopology$1$$anonfun$apply$mcVI$sp$5$$anonfun$apply$mcVI$sp$6.class[0m
-[0m[[0mdebug[0m] [0m	Master$$anonfun$createImperfect3DgridTopology$1$$anonfun$apply$mcVI$sp$5.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master$$anonfun$createImperfect3DgridTopology$1$$anonfun$apply$mcVI$sp$5.class[0m
-[0m[[0mdebug[0m] [0m	Master$$anonfun$createImperfect3DgridTopology$1.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master$$anonfun$createImperfect3DgridTopology$1.class[0m
-[0m[[0mdebug[0m] [0m	Master$$anonfun$createLineTopology$1$$anonfun$apply$mcVI$sp$9.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master$$anonfun$createLineTopology$1$$anonfun$apply$mcVI$sp$9.class[0m
-[0m[[0mdebug[0m] [0m	Master$$anonfun$createLineTopology$1.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master$$anonfun$createLineTopology$1.class[0m
-[0m[[0mdebug[0m] [0m	Master$.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master$.class[0m
-[0m[[0mdebug[0m] [0m	Master.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master.class[0m
-[0m[[0mdebug[0m] [0m	Workers$$anonfun$1.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers$$anonfun$1.class[0m
-[0m[[0mdebug[0m] [0m	Workers$$anonfun$receive$1.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers$$anonfun$receive$1.class[0m
-[0m[[0mdebug[0m] [0m	Workers.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers.class[0m
-[0m[[0mdebug[0m] [0m	Workers3D$$anonfun$2$$anonfun$apply$mcVI$sp$1$$anonfun$apply$mcVI$sp$2.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers3D$$anonfun$2$$anonfun$apply$mcVI$sp$1$$anonfun$apply$mcVI$sp$2.class[0m
-[0m[[0mdebug[0m] [0m	Workers3D$$anonfun$2$$anonfun$apply$mcVI$sp$1.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers3D$$anonfun$2$$anonfun$apply$mcVI$sp$1.class[0m
-[0m[[0mdebug[0m] [0m	Workers3D$$anonfun$2.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers3D$$anonfun$2.class[0m
-[0m[[0mdebug[0m] [0m	Workers3D$$anonfun$receive$2.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers3D$$anonfun$receive$2.class[0m
-[0m[[0mdebug[0m] [0m	Workers3D.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers3D.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus$$anonfun$create3DgridTopology$1$$anonfun$apply$mcVI$sp$3$$anonfun$apply$mcVI$sp$4$$anonfun$apply$mcVI$sp$9.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus$$anonfun$create3DgridTopology$1$$anonfun$apply$mcVI$sp$3$$anonfun$apply$mcVI$sp$4$$anonfun$apply$mcVI$sp$9.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus$$anonfun$create3DgridTopology$1$$anonfun$apply$mcVI$sp$3$$anonfun$apply$mcVI$sp$4.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus$$anonfun$create3DgridTopology$1$$anonfun$apply$mcVI$sp$3$$anonfun$apply$mcVI$sp$4.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus$$anonfun$create3DgridTopology$1$$anonfun$apply$mcVI$sp$3.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus$$anonfun$create3DgridTopology$1$$anonfun$apply$mcVI$sp$3.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus$$anonfun$create3DgridTopology$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus$$anonfun$create3DgridTopology$1.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus$$anonfun$createFullMeshTopology$1$$anonfun$apply$mcVI$sp$12.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus$$anonfun$createFullMeshTopology$1$$anonfun$apply$mcVI$sp$12.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus$$anonfun$createFullMeshTopology$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus$$anonfun$createFullMeshTopology$1.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus$$anonfun$createImperfect3DgridTopology$1$$anonfun$apply$mcVI$sp$5$$anonfun$apply$mcVI$sp$6$$anonfun$apply$mcVI$sp$10.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus$$anonfun$createImperfect3DgridTopology$1$$anonfun$apply$mcVI$sp$5$$anonfun$apply$mcVI$sp$6$$anonfun$apply$mcVI$sp$10.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus$$anonfun$createImperfect3DgridTopology$1$$anonfun$apply$mcVI$sp$5$$anonfun$apply$mcVI$sp$6.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus$$anonfun$createImperfect3DgridTopology$1$$anonfun$apply$mcVI$sp$5$$anonfun$apply$mcVI$sp$6.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus$$anonfun$createImperfect3DgridTopology$1$$anonfun$apply$mcVI$sp$5.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus$$anonfun$createImperfect3DgridTopology$1$$anonfun$apply$mcVI$sp$5.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus$$anonfun$createImperfect3DgridTopology$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus$$anonfun$createImperfect3DgridTopology$1.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus$$anonfun$createLineTopology$1$$anonfun$apply$mcVI$sp$11.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus$$anonfun$createLineTopology$1$$anonfun$apply$mcVI$sp$11.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus$$anonfun$createLineTopology$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus$$anonfun$createLineTopology$1.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus$.class[0m
+[0m[[0mdebug[0m] [0m	Master_Bonus.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Master_Bonus.class[0m
+[0m[[0mdebug[0m] [0m	Workers3D_bonus$$anonfun$2$$anonfun$apply$mcVI$sp$1$$anonfun$apply$mcVI$sp$2.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers3D_bonus$$anonfun$2$$anonfun$apply$mcVI$sp$1$$anonfun$apply$mcVI$sp$2.class[0m
+[0m[[0mdebug[0m] [0m	Workers3D_bonus$$anonfun$2$$anonfun$apply$mcVI$sp$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers3D_bonus$$anonfun$2$$anonfun$apply$mcVI$sp$1.class[0m
+[0m[[0mdebug[0m] [0m	Workers3D_bonus$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers3D_bonus$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	Workers3D_bonus$$anonfun$receive$2.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers3D_bonus$$anonfun$receive$2.class[0m
+[0m[[0mdebug[0m] [0m	Workers3D_bonus.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers3D_bonus.class[0m
+[0m[[0mdebug[0m] [0m	Workers_bonus$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers_bonus$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	Workers_bonus$$anonfun$receive$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers_bonus$$anonfun$receive$1.class[0m
+[0m[[0mdebug[0m] [0m	Workers_bonus.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/Workers_bonus.class[0m
 [0m[[0mdebug[0m] [0m	akka/AkkaException.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/3021ce582c4acf5c77beb523fe0dc23e3d6be704_2d3611639ec786bd963709f210cb9c5cf7cd985e_da39a3ee5e6b4b0d3255bfef95601890afd80709/akka/AkkaException.class[0m
 [0m[[0mdebug[0m] [0m	akka/ConfigurationException.class[0m
@@ -7617,6 +7619,18 @@
 [0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/a1d5c9cd9299a493a175bae1b06bb98e2350e82a_f771f71fdae3df231bcd54d5ca2d57f0bf93f467_da39a3ee5e6b4b0d3255bfef95601890afd80709/com/typesafe/config/impl/Tokens.class[0m
 [0m[[0mdebug[0m] [0m	com/typesafe/config/impl/Unmergeable.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/a1d5c9cd9299a493a175bae1b06bb98e2350e82a_f771f71fdae3df231bcd54d5ca2d57f0bf93f467_da39a3ee5e6b4b0d3255bfef95601890afd80709/com/typesafe/config/impl/Unmergeable.class[0m
+[0m[[0mdebug[0m] [0m	failureModelSupervisor$$anonfun$receive$3.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/failureModelSupervisor$$anonfun$receive$3.class[0m
+[0m[[0mdebug[0m] [0m	failureModelSupervisor$$anonfun$startFailureModel$1$$anonfun$apply$mcVI$sp$7.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/failureModelSupervisor$$anonfun$startFailureModel$1$$anonfun$apply$mcVI$sp$7.class[0m
+[0m[[0mdebug[0m] [0m	failureModelSupervisor$$anonfun$startFailureModel$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/failureModelSupervisor$$anonfun$startFailureModel$1.class[0m
+[0m[[0mdebug[0m] [0m	failureModelSupervisor$$anonfun$startFailureModel$2$$anonfun$apply$mcVI$sp$8.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/failureModelSupervisor$$anonfun$startFailureModel$2$$anonfun$apply$mcVI$sp$8.class[0m
+[0m[[0mdebug[0m] [0m	failureModelSupervisor$$anonfun$startFailureModel$2.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/failureModelSupervisor$$anonfun$startFailureModel$2.class[0m
+[0m[[0mdebug[0m] [0m	failureModelSupervisor.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/45a6abb88667a5ac695c349658ab9f7a1662c276_dir/failureModelSupervisor.class[0m
 [0m[[0mdebug[0m] [0m	library.properties[0m
 [0m[[0mdebug[0m] [0m	  /Users/Ishan/Documents/DOS/Push-Sum-Simulator/target/streams/$global/assemblyOption/$global/streams/assembly/ee6ce31c9009bdce1bfe64b9183b3f046791b084_be3457b4b748df35bffba675d8cddf44e9df4f7b_da39a3ee5e6b4b0d3255bfef95601890afd80709/library.properties[0m
 [0m[[0mdebug[0m] [0m	org/jboss/netty/bootstrap/Bootstrap.class[0m
